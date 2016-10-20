@@ -1,0 +1,42 @@
+run the program using below command
+
+python3 ttt.py
+
+
+It will show below message:
+
+	Welcome to the Tic tac to game
+	your piece looks like: X
+	Computer's piece looks like: O
+	Move locations coordinates are:
+	(1,1) (1,2) (1,3) 
+	(2,1) (2,2) (2,3) 
+	(3,1) (3,2) (3,3) 
+	It is your turn
+	Enter location coma separated: row-number(1-3),col-number(1-3) Example: 1,1
+
+
+Enter any corrdinate from command prompt in the format of x,y
+
+
+After making a move it will give below output:
+
+	Minimax algorithm has generated: 59705 search nodes for deciding a move
+	Computer has decided move:(1, 1)
+	Minimax algorithm  with alpha beta proning has generated: 2338 search nodes for deciding a move
+	Computer has decided move:(1, 1)
+
+First line of the output says number of search nodes generated using min max algorithm
+
+Second line tells the move decided
+
+their lines tell number of search nodes generated using min max with alph beta pruning algorithm
+
+forth line says move decided by alpha beta proning algorithm
+
+
+
+
+
+
+

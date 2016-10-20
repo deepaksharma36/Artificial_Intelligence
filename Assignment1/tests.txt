@@ -1,0 +1,311 @@
+-- States Visited ----------------Arad to Bucharest
+
+ ----------iteration: 1------------ 
+
+Arad
+
+ ----------iteration: 2------------ 
+
+Arad
+	Zerind
+	Timisoara
+	Sibiu
+
+ ----------iteration: 3------------ 
+
+Arad
+	Zerind
+		Oradea
+	Timisoara
+		Lugoj
+	Sibiu
+		Oradea
+		RimnicuVilcea
+		Fagaras
+
+ ----------iteration: 4------------ 
+
+Arad
+	Zerind
+		Oradea
+			Sibiu
+	Timisoara
+		Lugoj
+			Mehadia
+	Sibiu
+		Oradea
+		RimnicuVilcea
+			Craiova
+			Pitesti
+		Fagaras
+			Bucharest
+
+--  Solution for: Arad to Bucharest-------------------
+['Arad', 'Sibiu', 'Fagaras', 'Bucharest']
+
+
+-- States Visited ----------------Arad to Neamt
+
+ ----------iteration: 1------------ 
+
+Arad
+
+ ----------iteration: 2------------ 
+
+Arad
+	Zerind
+	Timisoara
+	Sibiu
+
+ ----------iteration: 3------------ 
+
+Arad
+	Zerind
+		Oradea
+	Timisoara
+		Lugoj
+	Sibiu
+		Oradea
+		RimnicuVilcea
+		Fagaras
+
+ ----------iteration: 4------------ 
+
+Arad
+	Zerind
+		Oradea
+			Sibiu
+	Timisoara
+		Lugoj
+			Mehadia
+	Sibiu
+		Oradea
+		RimnicuVilcea
+			Craiova
+			Pitesti
+		Fagaras
+			Bucharest
+
+ ----------iteration: 5------------ 
+
+Arad
+	Zerind
+		Oradea
+			Sibiu
+				RimnicuVilcea
+				Fagaras
+	Timisoara
+		Lugoj
+			Mehadia
+				Drobeta
+	Sibiu
+		Oradea
+		RimnicuVilcea
+			Craiova
+				Drobeta
+				Pitesti
+			Pitesti
+				Bucharest
+		Fagaras
+			Bucharest
+				Giurgiu
+				Urziceni
+
+ ----------iteration: 6------------ 
+
+Arad
+	Zerind
+		Oradea
+			Sibiu
+				RimnicuVilcea
+					Craiova
+					Pitesti
+				Fagaras
+					Bucharest
+	Timisoara
+		Lugoj
+			Mehadia
+				Drobeta
+					Craiova
+	Sibiu
+		Oradea
+		RimnicuVilcea
+			Craiova
+				Drobeta
+				Pitesti
+					Bucharest
+			Pitesti
+				Bucharest
+					Giurgiu
+					Urziceni
+		Fagaras
+			Bucharest
+				Giurgiu
+				Urziceni
+					Hirsova
+					Vaslui
+
+ ----------iteration: 7------------ 
+
+Arad
+	Zerind
+		Oradea
+			Sibiu
+				RimnicuVilcea
+					Craiova
+						Drobeta
+						Pitesti
+					Pitesti
+						Bucharest
+				Fagaras
+					Bucharest
+						Giurgiu
+						Urziceni
+	Timisoara
+		Lugoj
+			Mehadia
+				Drobeta
+					Craiova
+	Sibiu
+		Oradea
+		RimnicuVilcea
+			Craiova
+				Drobeta
+				Pitesti
+					Bucharest
+						Giurgiu
+						Urziceni
+			Pitesti
+				Bucharest
+					Giurgiu
+					Urziceni
+						Hirsova
+						Vaslui
+		Fagaras
+			Bucharest
+				Giurgiu
+				Urziceni
+					Hirsova
+						Eforie
+					Vaslui
+						Iasi
+
+ ----------iteration: 8------------ 
+
+Arad
+	Zerind
+		Oradea
+			Sibiu
+				RimnicuVilcea
+					Craiova
+						Drobeta
+							Mehadia
+						Pitesti
+							Bucharest
+					Pitesti
+						Bucharest
+							Fagaras
+							Giurgiu
+							Urziceni
+				Fagaras
+					Bucharest
+						Giurgiu
+						Urziceni
+							Hirsova
+							Vaslui
+	Timisoara
+		Lugoj
+			Mehadia
+				Drobeta
+					Craiova
+	Sibiu
+		Oradea
+		RimnicuVilcea
+			Craiova
+				Drobeta
+				Pitesti
+					Bucharest
+						Giurgiu
+						Urziceni
+							Hirsova
+							Vaslui
+			Pitesti
+				Bucharest
+					Giurgiu
+					Urziceni
+						Hirsova
+							Eforie
+						Vaslui
+							Iasi
+		Fagaras
+			Bucharest
+				Giurgiu
+				Urziceni
+					Hirsova
+						Eforie
+					Vaslui
+						Iasi
+							Neamt
+
+--  Solution for: Arad to Neamt-------------------
+['Arad', 'Sibiu', 'Fagaras', 'Bucharest', 'Urziceni', 'Vaslui', 'Iasi', 'Neamt']
+
+
+-- States Visited ----------------Bucharest to Zerind
+
+ ----------iteration: 1------------ 
+
+Bucharest
+
+ ----------iteration: 2------------ 
+
+Bucharest
+	Fagaras
+	Giurgiu
+	Pitesti
+	Urziceni
+
+ ----------iteration: 3------------ 
+
+Bucharest
+	Fagaras
+		Sibiu
+	Giurgiu
+	Pitesti
+		Craiova
+		RimnicuVilcea
+	Urziceni
+		Hirsova
+		Vaslui
+
+ ----------iteration: 4------------ 
+
+Bucharest
+	Fagaras
+		Sibiu
+			Oradea
+			RimnicuVilcea
+			Arad
+	Giurgiu
+	Pitesti
+		Craiova
+			Drobeta
+			RimnicuVilcea
+		RimnicuVilcea
+	Urziceni
+		Hirsova
+			Eforie
+		Vaslui
+			Iasi
+
+ ----------iteration: 5------------ 
+
+Bucharest
+	Fagaras
+		Sibiu
+			Oradea
+				Zerind
+
+--  Solution for: Bucharest to Zerind-------------------
+['Bucharest', 'Fagaras', 'Sibiu', 'Oradea', 'Zerind']
+
